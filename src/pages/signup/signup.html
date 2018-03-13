@@ -1,0 +1,74 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+
+<ion-content padding id="welcome">
+<ion-list class="ils">
+<br>
+  <ion-item>
+    <ion-label floating>Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+<br>
+  <ion-item>
+    <ion-label floating>Surname</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+<br>
+  <ion-item>
+    <ion-label floating>Roll No</ion-label>
+    <ion-input type="varchar"></ion-input>
+  </ion-item>
+<br>
+  <ion-item>
+    <ion-label floating>Email</ion-label>
+    <ion-input type="email"></ion-input>
+  </ion-item>
+<br>
+   <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+<br>
+   <ion-item>
+    <ion-label floating>Retype Password</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+<br>
+  <ion-item>
+  <ion-label>Skills</ion-label>
+  <ion-select [(ngModel)]="Skills" multiple="true" class="iss">
+    <ion-option>C Programming</ion-option>
+    <ion-option>Java Programming</ion-option>
+    <ion-option>Phython Programming</ion-option>
+    <ion-option>C# Programming</ion-option>
+    <ion-option>Ruby Programming</ion-option>
+    <ion-option>Rails Programming</ion-option>
+  </ion-select>
+</ion-item>
+
+
+<br>
+ <ion-item>
+  <ion-label>Qualification</ion-label>
+  <ion-select [(ngModel)]="Qualification" multiple="true" class="iss">
+    <ion-option>BSC CS</ion-option>
+    <ion-option>BVOC</ion-option>
+    <ion-option>BCA</ion-option>
+    <ion-option>MSC IT</ion-option>
+    <ion-option>MCA</ion-option>
+  
+  </ion-select>
+</ion-item>
+
+</ion-list>
+<br>
+<button ion-button color="dark" outline block class="bs" (click)="signup()">
+  Sign Up
+  </button>
+</ion-content>
